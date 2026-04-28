@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Openr — Break the ice.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+
+    <section class="hero">
+      <h1 class="hero-title">Break the ice.<br><em>Without overthinking it.</em></h1>
+      <p class="hero-sub">Drop in some context and get three casual, human-sounding openers you can actually send.</p>
+    </section>
+
+    <section class="input-section">
+      <div class="input-card">
+        <label class="input-label" for="context">What's the situation?</label>
+        <textarea id="context" class="context-input"
+          placeholder="e.g. We met at a coffee shop yesterday and talked about hiking. I want to follow up without being weird about it."
+          rows="4"></textarea>
+        <button class="generate-btn" id="generateBtn">
+          <span class="btn-label">Generate openers</span>
+          <span class="btn-icon">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="results-section" id="resultsSection">
+      <div class="results-label">Your openers</div>
+      <div class="openers-list" id="openersList">
+        <!-- Openers injected here -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
