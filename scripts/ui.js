@@ -44,11 +44,13 @@ function renderOpeners(openers) {
         copyBtn.innerHTML = `
           <i data-lucide="check" width="15" height="15"></i>
         `;
+        initializeLucide();
         setTimeout(() => {
           copyBtn.classList.remove('copied');
           copyBtn.innerHTML = `
             <i data-lucide="copy" width="15" height="15"></i>
           `;
+          initializeLucide();
         }, 2000);
       });
     });
